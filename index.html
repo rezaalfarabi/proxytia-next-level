@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Proxytia</title>
+</head>
+<body>
+ <div id="container">
+<header>
+    <h1>Proxytia</h1>
+</header>
+  <hr>
+  <p>Silahkan masukan nama dan pilih peran kamu ya!!</p>
+  <form id="daftar">
+    <p>Nama: <input type="text" name="nama"></p>
+    <p>Peran: 
+      <select name="peran" id="peran">
+        <option value="pilih peran">pilih peran</option>
+        <option value="ksatria">Ksatria</option>
+        <option value="tabib">Tabib</option>
+        <option value="penyihir">Penyihir</option>
+      </select>
+    </p>
+    <p>Tahun lahir: <input type="number" name="tahunLahir"></p>
+    <p>
+      <button type="button" onclick="hasilSubmit()">Mainkan</button>
+    </p>
+  </form>
+  <p id="hasilNama"></p>
+  <p id="hasilPeran"></p> 
+  <p id="hasilGame"></p>
+  
+   <script src="script.js"></script>
+  
+</body>
+</html>
